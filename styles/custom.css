@@ -53,3 +53,8 @@
     flex-direction: column;
     justify-content: center;
 }
+#service-display{
+    text-align: center;
+    display: flex;
+    
+}
