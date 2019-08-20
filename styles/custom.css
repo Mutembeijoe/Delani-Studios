@@ -26,7 +26,7 @@
     animation-timing-function:ease;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-
+    cursor: pointer;
 }
 
 @keyframes restlessMouse{
@@ -36,4 +36,10 @@
     100%{
         transform: translate(0,100px)
     }
+}
+
+#about{
+    text-align: center;
+    margin-top:40px;
+    /* text-align-last: center; */
 }
