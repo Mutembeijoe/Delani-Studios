@@ -1,6 +1,15 @@
 #hero{
+    position: relative;
     height:100vh;
     background-image: url('/img/backgrounds/h_img.jpg');
     background-size: cover;
     background-position: center;
+}
+#hero-content{
+    position: absolute;
+    top:30%;
+    left:30%;
+}
+#hero-content p{
+    font-size:14px;
 }
