@@ -1,3 +1,12 @@
 $(document).ready(function(){
-    console.log('Hello World')
+    $('.service-icon').on('click',function(){
+        $(this).fadeOut(function(){
+           $(this).next().fadeIn();
+        })
+    })
+    $('.description').on('click',function(){
+        $(this).fadeOut(function(){
+           $(this).prev().fadeIn();
+        })
+    })
 })

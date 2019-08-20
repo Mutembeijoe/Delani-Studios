@@ -56,5 +56,12 @@
 #service-display{
     text-align: center;
     display: flex;
-    
+    justify-content: space-between;
+    align-content: space-between;
+}
+#service-display div{
+    min-width:200px;
+ }
+.description{
+    display:none;
 }
