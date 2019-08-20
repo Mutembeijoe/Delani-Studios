@@ -1,15 +1,19 @@
 #hero{
-    position: relative;
     height:100vh;
     background-image: url('/img/backgrounds/h_img.jpg');
     background-size: cover;
     background-position: center;
 }
 #hero-content{
-    position: absolute;
-    top:30%;
-    left:30%;
+    border:1px solid black;
+    height:100vh;
+    width:70%;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 #hero-content p{
-    font-size:14px;
+    font-size:12px;
 }
