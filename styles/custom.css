@@ -114,6 +114,21 @@
     opacity:1
 }
 
+#contact{
+    min-height:400px;
+    background-image: url("/img/backgrounds/c_image.jpg");
+    background-size: cover;
+    background-position: center;
+}
+input[type="submit"]{
+    margin-top: 5px;
+    color: #fff;
+    background-color: #CA7C29;
+
+}
+input[type="submit"]:hover{
+    background-color: #D69A38;
+}
 
 @media (max-width:596px){
     #service-display{
