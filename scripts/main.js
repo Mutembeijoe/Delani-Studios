@@ -9,7 +9,7 @@ $(document).ready(function(){
            $(this).prev().fadeIn();
         })
     })
-    // smooth scroll behaviour in jquery
+//     smooth scroll behaviour in jquery
    $('a[href="#about"]').click(function(e){
        if(this.hash != ""){
            e.preventDefault();
@@ -35,6 +35,8 @@ $(document).ready(function(){
        $('input[name="email"')[0].value = "";
        $('input[name="name"')[0].value = "";
        $('textarea')[0].value = "";
+    // success alert 
+       $('form').prepend(`<div class="alert alert-success alert-dismissible"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Hi, ${name} we received your mail</div>`);
         e.preventDefault();
    })
     
