@@ -130,6 +130,13 @@ input[type="submit"]:hover{
     background-color: #D69A38;
 }
 
+#social{
+    margin:30px;
+    text-align: center;
+}
+.social-icon{
+    cursor: pointer;
+}
 @media (max-width:596px){
     #service-display{
         display:flex;
