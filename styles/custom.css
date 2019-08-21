@@ -56,12 +56,68 @@
 #service-display{
     text-align: center;
     display: flex;
-    justify-content: space-between;
-    align-content: space-between;
+    justify-content: space-around;
+    margin-top:50px;
 }
 #service-display div{
-    min-width:200px;
+    min-width:33.3%;
  }
 .description{
     display:none;
+}
+#portfolio{
+    margin-top:30px;
+    display:flex;
+    flex-wrap: wrap;
+}
+.show-case{
+    position: relative;
+    width:250px;
+    height:250px;
+    margin:auto;
+}
+.show-case-img{
+    width:100%; 
+    height:auto;
+    opacity: 1;
+    backface-visibility: hidden;
+}
+.cover{
+    background-color: transparent;
+    width:250px;
+    height: 207px;
+    position: absolute;
+}
+.portfolio-desc{
+ position: absolute;
+ top:40%;
+ left:50%;
+ text-align: center;
+ transform: translate(-50%, -50%);
+ opacity: 0;
+ transition: 0.7s ease;
+ border:5px solid white;
+}
+.port-desc-text{
+    color:white;
+    font-size: 30px;
+    padding:10px;
+
+}
+.show-case:hover .cover {
+    background-color: rgba(0,0,0,0.9);
+}
+.show-case:hover .show-case-img{
+    opacity:0.3;
+}
+.show-case:hover .portfolio-desc{
+    opacity:1
+}
+
+
+@media (max-width:596px){
+    #service-display{
+        display:flex;
+        flex-direction: column;
+    }
 }
