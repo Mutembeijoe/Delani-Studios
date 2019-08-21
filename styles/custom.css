@@ -1,3 +1,6 @@
+/* html{
+    scroll-behavior: smooth;
+} */
 #hero{
     height:100vh;
     background-image: url('/img/backgrounds/h_img.jpg');
@@ -22,11 +25,14 @@
 }
 #mouse{
     animation-name: restlessMouse;
-    animation-duration: 1s;
+    animation-duration: .5s;
     animation-timing-function:ease;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     cursor: pointer;
+}
+#mouse:hover{
+    animation-play-state: paused;
 }
 
 @keyframes restlessMouse{
