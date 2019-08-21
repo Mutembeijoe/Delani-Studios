@@ -9,7 +9,7 @@ $(document).ready(function(){
            $(this).prev().fadeIn();
         })
     })
-    //smooth scroll behaviour in jquery
+    // smooth scroll behaviour in jquery
    $('a[href="#about"]').click(function(e){
        if(this.hash != ""){
            e.preventDefault();
@@ -22,6 +22,20 @@ $(document).ready(function(){
             })
 
        }
+   })
+
+   $('form').submit(function(e){
+       let name = $('input[name="name"]').val();
+       let email = $('input[name="email"]').val();
+       let message = $('textarea').val();
+       console.log(name,email,message);
+       //send email
+
+       //clear inputs
+       $('input[name="email"')[0].value = "";
+       $('input[name="name"')[0].value = "";
+       $('textarea')[0].value = "";
+        e.preventDefault();
    })
     
 })
