@@ -9,6 +9,17 @@ $(document).ready(function(){
            $(this).prev().fadeIn();
         })
     })
+
+    $('.show-case').hover(function () { 
+        $(this).children('.cover').toggleClass('cover-hover');
+        $(this).children('.show-case-img').stop().fadeTo("slow",0.4)
+        $(this).children('.portfolio-desc').css({opacity:1})
+
+    },function(){
+        $(this).children('.cover').toggleClass('cover-hover')
+        $(this).children('.show-case-img').stop().fadeTo("fast",1)
+        $(this).children('.portfolio-desc').css({opacity:0})
+    });
 //     smooth scroll behaviour in jquery
    $('a[href="#about"]').click(function(e){
        if(this.hash != ""){

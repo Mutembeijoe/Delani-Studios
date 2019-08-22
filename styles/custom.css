@@ -94,6 +94,7 @@
     height: 207px;
     position: absolute;
 }
+
 .portfolio-desc{
  position: absolute;
  top:40%;
@@ -110,15 +111,16 @@
     padding:10px;
 
 }
-.show-case:hover .cover {
+ .show-case:hover .cover-hover {
     background-color: rgba(0,0,0,0.9);
 }
+/*
 .show-case:hover .show-case-img{
     opacity:0.3;
 }
 .show-case:hover .portfolio-desc{
     opacity:1
-}
+} */
 
 #contact{
     min-height:400px;
