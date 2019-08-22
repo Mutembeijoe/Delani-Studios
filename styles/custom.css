@@ -6,6 +6,7 @@
     background-image: url('/img/backgrounds/h_img.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 #hero-content{
     height:100vh;
