@@ -1,4 +1,23 @@
+/* <======= FONTS IMPORT =======> */
 @import url('https://fonts.googleapis.com/css?family=Baloo+Da|Lalezar|Rakkas&display=swap');
+
+/* <======= General =======> */
+
+h2{
+    font-family: 'Lalezar', cursive;
+}
+
+body::-webkit-scrollbar {
+    background-color: #DADADA;
+    width:12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #CA7C29;
+    border-radius: 25px;
+}
+
+/* <======= Hero section ======> */
 #hero{
     height:100vh;
     background-image: url('../img/backgrounds/h_img.jpg');
@@ -23,7 +42,6 @@
 #hero-content p{
     font-size:14px;
     font-family: 'Baloo Da', cursive;
-    /* font-family: 'Rakkas', cursive; */
 }
 #mouse{
     animation-name: restlessMouse;
@@ -45,14 +63,15 @@
         transform: translate(0,100px)
     }
 }
-h2{
-    font-family: 'Lalezar', cursive;
-}
 
+/* <======== About section==========> */
 #about{
     text-align: center;
     margin-top:40px;
 }
+
+/* <========= Services Section =========> */
+
 #services{
     display:flex;
     background-image: url("../img/backgrounds/s_image.jpg");
@@ -83,6 +102,9 @@ h2{
 .description{
     display:none;
 }
+
+/* <=========Portfolio section ========> */
+
 #portfolio{
     margin-top:30px;
     display:flex;
@@ -127,6 +149,8 @@ h2{
     background-color: rgba(0,0,0,0.9);
 }
 
+/* <======= Contact section =======> */
+
 #contact{
     min-height:400px;
     background-image: url("../img/backgrounds/c_image.jpg");
@@ -158,6 +182,10 @@ form input,textarea{
 #email-error{
     color:#EB5C60;
 }
+
+
+/* <======= Social Icons =======> */
+
 #social{
     margin:30px;
     text-align: center;
@@ -168,18 +196,25 @@ form input,textarea{
 .social-icon:hover{
     box-shadow: 0  8px 10px 0 rgba(0,0,0,0.2);
 }
-body::-webkit-scrollbar {
-    background-color: #DADADA;
-    width:12px;
-}
-body::-webkit-scrollbar-thumb {
-    background-color: #CA7C29;
-    border-radius: 25px;
-}
 
+/* <==== Footer====> */
 footer{
     font-family: 'Lalezar', cursive;
 }
+/* <=== Additional personal brand ====> */
+#personal-brand{
+    position: fixed;
+    background-color: #CA7C29;
+    width:200px;
+    bottom:50px;
+    left:-180px;
+    text-align: center;
+    color:white;
+    border-radius: 10px;
+    font-family: 'Lalezar', cursive;
+}
+ 
+/* <==== Media Queries=====> */
 @media (max-width:596px){
     #service-display{
         display:flex;
