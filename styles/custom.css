@@ -151,8 +151,12 @@ form input::placeholder,textarea::placeholder{
     color:white !important;
 }
 
+form input,textarea{
+    color:#E4BC5C !important;
+}
+
 #email-error{
-    color:white;
+    color:#EB5C60;
 }
 #social{
     margin:30px;
