@@ -73,6 +73,13 @@ h2{
 #service-display div{
     min-width:33.3%;
  }
+ #service-display div img:hover{
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+ }
+ #service-display div p:hover{
+    cursor: pointer;
+ }
 .description{
     display:none;
 }
@@ -153,6 +160,9 @@ form input::placeholder,textarea::placeholder{
 }
 .social-icon{
     cursor: pointer;
+}
+.social-icon:hover{
+    box-shadow: 0  8px 10px 0 rgba(0,0,0,0.2);
 }
 body::-webkit-scrollbar {
     background-color: #DADADA;
