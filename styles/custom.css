@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Da|Lalezar|Rakkas&display=swap');
 #hero{
     height:100vh;
     background-image: url('/img/backgrounds/h_img.jpg');
@@ -13,13 +14,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    font-family: 'Rakkas', cursive;
 }
 #hero-content div:last-child{
     justify-content: flex-end;
     position: relative;
 }
 #hero-content p{
-    font-size:12px;
+    font-size:14px;
+    font-family: 'Baloo Da', cursive;
+    /* font-family: 'Rakkas', cursive; */
 }
 #mouse{
     animation-name: restlessMouse;
@@ -40,6 +44,9 @@
     100%{
         transform: translate(0,100px)
     }
+}
+h2{
+    font-family: 'Lalezar', cursive;
 }
 
 #about{
@@ -154,6 +161,10 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
     background-color: #CA7C29;
     border-radius: 25px;
+}
+
+footer{
+    font-family: 'Lalezar', cursive;
 }
 @media (max-width:596px){
     #service-display{
