@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Da|Lalezar|Rakkas&display=swap');
 #hero{
     height:100vh;
-    background-image: url('/img/backgrounds/h_img.jpg');
+    background-image: url('../img/backgrounds/h_img.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -55,7 +55,7 @@ h2{
 }
 #services{
     display:flex;
-    background-image: url("/img/backgrounds/s_image.jpg");
+    background-image: url("../img/backgrounds/s_image.jpg");
     text-align: center;
     color:white;
     background-position: center;
@@ -122,7 +122,7 @@ h2{
 
 #contact{
     min-height:400px;
-    background-image: url("/img/backgrounds/c_image.jpg");
+    background-image: url("../img/backgrounds/c_image.jpg");
     background-size: cover;
     background-position: center;
 }
