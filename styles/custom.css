@@ -157,6 +157,9 @@ form input::placeholder,textarea::placeholder{
 .social-icon{
     cursor: pointer;
 }
+/* ::-webkit-scrollbar{
+     background:#CA7C29;
+}  */
 @media (max-width:596px){
     #service-display{
         display:flex;
