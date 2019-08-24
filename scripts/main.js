@@ -6,6 +6,13 @@ $(document).ready(function(){
            $(this).next().fadeIn();
         })
     })
+
+    $('.service-icon').hover(function(){
+        $(this).addClass('shadow p-3 mb-5 bg-white rounded')
+    },function(){
+        $(this).removeClass('shadow p-3 mb-5 bg-white rounded')
+    })
+
     $('.description').on('click',function(){
         $(this).fadeOut(function(){
            $(this).prev().fadeIn();
@@ -14,14 +21,14 @@ $(document).ready(function(){
 
     //Portfolio Section Animation
     $('.show-case').hover(function () { 
-        $(this).children('.cover').toggleClass('cover-hover');
-        $(this).children('.show-case-img').stop().fadeTo("slow",0.4)
-        $(this).children('.portfolio-desc').css({opacity:1})
+        $(this).children('.cover').toggleClass('cover-hover').stop().animate({height:'225px'});
+        $(this).children('.show-case-img').stop().fadeTo("slow",0.4).addClass('scale')
+        $(this).children('.portfolio-desc').stop().animate({opacity:1},300)
 
     },function(){
-        $(this).children('.cover').toggleClass('cover-hover')
-        $(this).children('.show-case-img').stop().fadeTo("fast",1)
-        $(this).children('.portfolio-desc').css({opacity:0})
+        $(this).children('.cover').toggleClass('cover-hover').stop().animate({height:'205px'})
+        $(this).children('.show-case-img').stop().fadeTo(50,1).removeClass('scale')
+        $(this).children('.portfolio-desc').stop().animate({opacity:0},100)
     });
 
     //  smooth scroll behaviour in jquery

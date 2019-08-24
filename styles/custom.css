@@ -94,7 +94,7 @@ body::-webkit-scrollbar-thumb {
  }
  #service-display div img:hover{
     cursor: pointer;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
  }
  #service-display div p:hover{
     cursor: pointer;
@@ -115,17 +115,23 @@ body::-webkit-scrollbar-thumb {
     width:250px;
     height:250px;
     margin:auto;
+    overflow: hidden;
 }
 .show-case-img{
     width:100%; 
     height:auto;
     opacity: 1;
     backface-visibility: hidden;
+    transition-duration: .4s;
+}
+.scale{
+    transform: scale(1.2);
+    
 }
 .cover{
     background-color: transparent;
     width:250px;
-    height: 207px;
+    height: 205px;
     position: absolute;
 }
 
