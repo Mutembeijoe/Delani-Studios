@@ -41,7 +41,7 @@ Deklani Studio is a simple website for Delani Studio to introduce themselves and
 | Page Load                                        	| Bouncing Mouse Animation                              	| CSS Keyframes Animations || jQuery                                       	|
 | Hover over Bouncing Mouse                        	| Stop Bouncing Animation                               	| CSS Pesudo class: hover  || jQuery mouse events                          	|
 | Click Bouncing Mouse                             	| Scroll Down to The About Section                      	| HTML #id same page navigation                                            	|
-| Scroll from the Landing Page                     	| -Smooth Scroll -Scroll parallax effect                	| -CSS 3 scroll-behaviour smooth || jQuery -Css 3 fixed Backgrounds        	|
+| Scroll from the Landing Page                     	| -Smooth Scroll & parallax effect                	| -CSS 3 scroll behaviour && fixed backgrounds        	|
 | Hover over What we Do icons                      	| Box Shadow applied                                    	| CSS pseudo class: hover                                                  	|
 | Click on What we Do icons                        	| Toggle between icon and description                   	| jQuery fadeOut & fade in Effects                                         	|
 | Hover over Portfolio images                      	| fade background Image & Reveal projection decription  	| jQuery Fade to animations,toogle Class & CSS methods                     	|
