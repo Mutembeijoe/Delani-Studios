@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+    //What We Do Section Animation
     $('.service-icon').on('click',function(){
         $(this).fadeOut(function(){
            $(this).next().fadeIn();
@@ -10,6 +12,7 @@ $(document).ready(function(){
         })
     })
 
+    //Portfolio Section Animation
     $('.show-case').hover(function () { 
         $(this).children('.cover').toggleClass('cover-hover');
         $(this).children('.show-case-img').stop().fadeTo("slow",0.4)
@@ -43,11 +46,11 @@ $(document).ready(function(){
         var email = $('[name="client_email"]').val();
         var message = $('[name="client_message"]').val();
         var url =   "https://us3.api.mailchimp.com/2.0/lists/subscribe.json?"
-                +  "apikey=d8ebe42f1475d69123eee37ca1cb78ba-us3&id=0e109de66a"//API KEY  
+                +  "apikey=d8ebe42f1475d69123eee37ca1cb78ba-us3&id=0e109de66a"//API KEY - May Fail on Gh-pages after some time. For security reasons MailChimp deactivates keys revealed in public! 
                 +  "&email[email]=" + email 
                 +  "&merge_vars[NAME]=" + name 
                 +  "&merge_vars[MESSAGE]=" + message
-                +  "&double_optin=false" //add to list even if email is invalid
+                +  "&double_optin=false" 
                 +  "&send_welcome=false"; //prevent send an email notification to new subscriber
     $.ajax({
             //  type: "POST",
@@ -55,13 +58,11 @@ $(document).ready(function(){
             crossDomain:true,
             dataType: 'jsonp',
             success: function(data) {
-            //    $('#subscribe-form').html("Thank you!");
-            $('form').prepend(`<div class="alert alert-success alert-dismissible"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Hi, ${name} we received your mail</div>`);
+                $('form').prepend(`<div class="alert alert-success alert-dismissible"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Hi, ${name} we received your mail</div>`);
             },
             error: function(jqXHR, textStatus, errorThrown) {
-            //    alert(errorThrown);
-            $('form').prepend(`<div class="alert alert-success alert-dismissible"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Hi, ${name} we received your mail</div>`);
-
+                // Both success and error handled the same way due to CORS - The Api call succeeds but still resolves to failure.  
+                $('form').prepend(`<div class="alert alert-success alert-dismissible"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Hi, ${name} we received your mail</div>`);
             }
         });
 
@@ -71,7 +72,7 @@ $(document).ready(function(){
 
     });
     
-    // Additional personal brand
+    // Additional alias slider
     $('#personal-brand').hover(function(){
         $(this).stop().animate({left:'-20px'})
     },function(){

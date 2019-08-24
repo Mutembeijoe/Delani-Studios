@@ -45,7 +45,7 @@ body::-webkit-scrollbar-thumb {
 }
 #mouse{
     animation-name: restlessMouse;
-    animation-duration: .5s;
+    animation-duration: .35s;
     animation-timing-function:ease;
     animation-direction: alternate;
     animation-iteration-count: infinite;
@@ -60,7 +60,7 @@ body::-webkit-scrollbar-thumb {
         transform: translate(0, 0)
     }
     100%{
-        transform: translate(0,100px)
+        transform: translate(0,60px)
     }
 }
 
