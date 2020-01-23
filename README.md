@@ -3,7 +3,7 @@
 #### By **Joe Mutembei**
 *******
 ## Description
-Deklani Studio is a simple website for Delani Studio to introduce themselves and showcase some of their works. Its is an exellent idea to promote the Studio customer base
+Delani Studio is a simple website for Delani Studio to introduce themselves and showcase some of their works. Its is an exellent idea to promote the Studio customer base
 ## Setup/Installation Requirements
 * clone the repository to your local computer
 * Open the project folder 
