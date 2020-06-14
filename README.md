@@ -1,9 +1,9 @@
 # DELANI STUDIO
-#### A simple website for Delani Studios to showcase themselves. 
-#### By **Joe Mutembei**
+#### A simple portolio Website for Delani Studios to showcase themselves. 
+#### By **Ndirangu Joe**
 *******
 ## Description
-Delani Studio is a simple website for Delani Studio to introduce themselves and showcase some of their works. Its is an exellent idea to promote the Studio customer base
+Delani Studio is a simple website for a Studio to introduce themselves and showcase some of their works. Its is an exellent idea to promote the Studio customer base
 ## Setup/Installation Requirements
 * clone the repository to your local computer
 * Open the project folder 
@@ -52,4 +52,4 @@ Delani Studio is a simple website for Delani Studio to introduce themselves and 
 | Hover over social icons                          	| Box shadow                                            	| Css Box shadow                                                           	|
 
 ## Support and contact details
-    Holla me at mutembeijoe@gmail.com if you run into any additional issues!
+    Holla me at joe.drango@gmail.com if you run into any additional issues!
